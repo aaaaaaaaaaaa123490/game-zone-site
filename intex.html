@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Game Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #00ffcc;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .download-btn {
+            margin-top: 8px;
+            padding: 8px 12px;
+            background-color: #00ffcc;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .upload-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .upload-section input {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            .download-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>?? Ultimate Game Zone ??</h1>
+        <p>Download & Upload Your Favorite Game Files - GTA, Free Fire, Minecraft & More!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#upload">Upload</a>
+        <a href="#privacy">Privacy Policy</a>
+    </nav>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="/mnt/data/gta san.jpg" alt="GTA San Andreas">
+            <button class="download-btn">Download</button>
+        </div>
+        <div class="gallery-item">
+            <img src="/mnt/data/gta vice.jpg" alt="GTA Vice City">
+            <button class="download-btn">Download</button>
+        </div>
+        <div class="gallery-item">
+            <img src="/mnt/data/gta-5-main-characters-e4rzrndhs77vx1ro.jpg" alt="GTA V">
+            <button class="download-btn">Download</button>
+        </div>
+        <div class="gallery-item">
+            <img src="/mnt/data/minecraft-s2kxfahyg30sob8q.jpg" alt="Minecraft">
+            <button class="download-btn">Download</button>
+        </div>
+        <div class="gallery-item">
+            <img src="/mnt/data/unnamed.jpg" alt="Free Fire">
+            <button class="download-btn">Download</button>
+        </div>
+    </section>
+
+    <section class="upload-section" id="upload">
+        <h2>Upload Your Game ZIP Files</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <input type="file" name="gamefile" accept=".zip"><br>
+            <input type="submit" value="Upload">
+        </form>
+    </section>
+
+    <footer>
+        <p id="about">About Us: We are passionate gamers creating a space for you to explore, download and share the best gaming content.</p>
+        <p id="privacy">Privacy Policy: We value your privacy. All uploads are secure and will never be shared without permission.</p>
+        <p>&copy; 2025 Ultimate Game Zone</p>
+    </footer>
+</body>
+</html>
